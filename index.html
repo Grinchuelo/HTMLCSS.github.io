@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What is HTML and CSS</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" id="estilos">
+    <link rel="stylesheet" href="cancelCSS.css">
 </head>
 <body>
-    <nav></nav>
+    <nav>
+        <div class="contBtn">
+            <div class="labelBtn">CCS?</div>
+            <div id="btn">
+                <a id="btnDisabled" class="" onclick="disableCSS()"><i class="fa-solid fa-xmark"></i></a>
+                <a id="btnActivated" class="green" onclick="activeCSS()"><i class="fa-solid fa-check"></i></a>
+            </div>
+        </div>
+    </nav>
+   
     <section>
         <header>
             <div class="header-containerImg">
@@ -37,6 +47,7 @@
             </div>
         </footer>
     </section>
-    
+    <script src="https://kit.fontawesome.com/eab0160ed4.js" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
 </body>
 </html>
