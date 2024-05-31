@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav></nav>
+    <nav>
+        <ul>
+            <li><a href="css.html" class="link" id="css">CSS</a></li>
+            <li><a href="index.html" class="link" id="html">HTML</a></li>
+        </ul>
+        
+    </nav>
     <section>
         <header>
             <div class="header-containerImg">
@@ -18,25 +24,62 @@
                 <h2>HyperText Markup Language</h2>
             </div> 
         </header>
+
         <main>
-            
+            <aside></aside>
+            <div class="main">
+                <h3 class="main-element">What is it?</h3>
+                <p class="main-element"><span>HTML</span> is a typing language used for web development. It helps us to make the estructure of the website adding the text and the multimedia files inside of boxes strategically positionated to add styles on them later. 
+                </p>
+                <div class="img-container">
+                    <img src="assets/structure.jpg" alt="" class="main-element">
+                </div>
+
+                <h3 class="main-element">Origin</h3>
+                <p class="main-element">In the very beginning, Tim Berners-Lee, a physicist, created this "hipertext" system with the idea of sharing simple text with other scientists. So, the time passed and now we're at the version number 5 of HTML, where we can do other complex things like controlling tables, defining IDs for every element in the page and being able to linking it with another programming languages, getting the most out of it.
+                </p>
+
+                <hr class="main-element">
+
+                <h3 class="main-element" style="color:#ff6200">Structure</h3>
+                <p class="main-element">When we talk of "structure" we are talking about boxes. These boxes contain elements. Here's an example: 
+                </p>
+                <div class="img-container">
+                    <img src="assets/exampleStructure2.jpg" alt="" class="main-element">
+                </div>
+                <p>As we can see, there are <span>four principal</span> markups:</p> <br>
+                <div class="markups-desc">
+                    <img src="assets/doctype.jpg" alt="">
+                    <p class="main-element">Tells the browser which version of HTML we want to use.</p>
+                    <img src="assets/htmlMarkup.jpg" alt="">
+                    <p class="main-element">Is the root element. Here are stored the rest of the elements. Also, we can tell the browser which language we are working on. Example: "en - english".</p>
+                    <img src="assets/head.jpg" alt="">
+                    <p class="main-element">Provides general information about the document, including its title and links.</p>
+                    <img src="assets/body.jpg" alt="">
+                    <p class="main-element">Here we charge the elements that the user will interact with, like text, images, videos, buttons, etc.</p>
+                </div>
+                
+
+            </div>
         </main>
-        <footer>
-            <p>Made by</p>
-            <div class="container-img">
-                <img src="assets/Maxi.png" alt="">
-            </div>
-            <div class="container-img">
-                <img src="assets/Esteban.png" alt="">
-            </div>
-            <div class="container-img">
-                <img src="assets/Green.png" alt="">
-            </div>
-            <div class="container-img">
-                <img src="assets/Manu.png" alt="">
-            </div>
-        </footer>
+        
     </section>
     
+    <footer>
+        <p>Made by</p>
+        <div class="container-img">
+            <img src="assets/Maxi.png" alt="">
+        </div>
+        <div class="container-img">
+            <img src="assets/Esteban.png" alt="">
+        </div>
+        <div class="container-img">
+            <img src="assets/Green.png" alt="">
+        </div>
+        <div class="container-img">
+            <img src="assets/Manu.png" alt="">
+        </div>
+    </footer>
+
 </body>
 </html>
