@@ -13,17 +13,47 @@ body {
 nav {
     height: 4rem;
     width: 100%;
-    border-bottom: solid 1px #fff;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow: 0 0 3rem #ff6200;
 }
 
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: .3s;
+}
+#html:hover {
+    color: rgb(255, 115, 0);
+}
+#css:hover {
+    color: rgb(0, 213, 255);
+}
+
+
+ul{
+    display: flex;
+    width: 80vh;
+    justify-content: space-evenly;
+    list-style: none;
+
+    font-size: 2em;
+}
 section {
+    display: flex;
     padding: 4rem;
+  
+    width: 90vw;
+
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
 }
 
 header {
     display: flex;
-    background: #04041d;
-    border-radius: 1rem;
 }
 
 header img {
@@ -48,10 +78,48 @@ header .header-containerTitle h2 {
 }
 
 main {
-    height: 40rem;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+main aside{
+    width: 30%;
+    height: 100%;
+    border: solid;
+}
+.main {
+    width: 65%;
+    height: 100%;
+    padding: 2rem;
+}
+.main h3 {
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+.main p {
+    font-size: 1.8rem;
+}
+.main .img-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.main .img-container img {
+    width: 100%;
+}
+.main .main-element {
+    margin-bottom: 2rem;
+}
+.main .markups-desc p {
+    font-size: 1.5rem;
 }
 
 footer {
+    background: linear-gradient(to bottom, #020420 1%, #0a0e47 70%);
+    height: 18rem;
+    margin-top: 3rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -65,4 +133,8 @@ footer p {
 
 footer .container-img img {
     width: 10rem;
+} 
+
+span {
+    color: #ff6200;
 }
