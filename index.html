@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="cancelCSS.css">
 </head>
 <body>
-    <nav>
+    <nav class="navHtml">
         <ul>
             <li><a href="css.html" class="link" id="css">CSS</a></li>
             <li><a href="index.html" class="link" id="html">HTML</a></li>
         </ul>
 
         <div class="contBtn">
-            <div class="labelBtn">CCS?</div>
+            <div class="labelBtn">CSS?</div>
             <div id="btn">
                 <a id="btnDisabled" class="" onclick="disableCSS()"><i class="fa-solid fa-xmark"></i></a>
                 <a id="btnActivated" class="green" onclick="activeCSS()"><i class="fa-solid fa-check"></i></a>
@@ -38,7 +38,7 @@
             <aside></aside>
             <div class="main">
                 <h3 class="main-element">What is it?</h3>
-                <p class="main-element"><span>HTML</span> is a typing language used for web development. It helps us to make the estructure of the website adding the text and the multimedia files inside of boxes strategically positionated to add styles on them later. 
+                <p class="main-element"><span class="spanHtml">HTML</span> is a typing language used for web development. It helps us to make the estructure of the website adding the text and the multimedia files inside of boxes strategically positionated to add styles on them later. 
                 </p>
                 <div class="img-container">
                     <img src="assets/structure.jpg" alt="" class="main-element">
@@ -56,7 +56,7 @@
                 <div class="img-container">
                     <img src="assets/exampleStructure2.jpg" alt="" class="main-element">
                 </div>
-                <p>As we can see, there are <span>four principal</span> markups:</p> <br>
+                <p>As we can see, there are <span class="spanHtml">four principal</span> markups:</p> <br>
                 <div class="markups-desc">
                     <img src="assets/doctype.jpg" alt="">
                     <p class="main-element">Tells the browser which version of HTML we want to use.</p>
@@ -67,11 +67,10 @@
                     <img src="assets/body.jpg" alt="">
                     <p class="main-element">Here we charge the elements that the user will interact with, like text, images, videos, buttons, etc.</p>
                 </div>
-                
-
             </div>
         </main>
     </section>
+
     <footer>
         <p>Made by</p>
         <div class="container-img">
@@ -87,6 +86,7 @@
             <img src="assets/Manu.png" alt="">
         </div>
     </footer>
+
     <script src="https://kit.fontawesome.com/eab0160ed4.js" crossorigin="anonymous"></script>
     <script src="code.js"></script>
 </body>

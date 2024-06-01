@@ -16,20 +16,25 @@ nav {
 
     display: flex;
     align-items: center;
+}
 
+.navHtml {
     box-shadow: 0 0 3rem #ff6200;
+}
+.navCss {
+    box-shadow: 0 0 3rem #00d5ff;
 }
 
 nav a {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     text-decoration: none;
     transition: .3s;
 }
 #html:hover {
-    color: rgb(255, 115, 0);
+    color: #ff7300;
 }
 #css:hover {
-    color: rgb(0, 213, 255);
+    color: #00d5ff;
 }
 
 
@@ -135,6 +140,22 @@ footer .container-img img {
     width: 10rem;
 } 
 
-span {
+.spanHtml {
     color: #ff6200;
+}
+
+.spanCss {
+    color: #00d5ff;
+}
+
+@media (max-width: 1200px) {
+    section {
+        padding: 4rem 1rem 4rem 1rem;
+    }
+    .main p {
+        font-size: 1.5rem;
+    }
+    .main .markups-desc p {
+        font-size: 1.2rem;
+    }
 }
