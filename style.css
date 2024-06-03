@@ -90,12 +90,12 @@ main {
 }
 
 main aside{
-    width: 30%;
+    width: 20%;
     height: 100%;
     border: solid;
 }
 .main {
-    width: 65%;
+    width: 80%;
     height: 100%;
     padding: 2rem;
 }
@@ -117,8 +117,14 @@ main aside{
 .main .main-element {
     margin-bottom: 2rem;
 }
-.main .markups-desc p {
+.main .markups-desc p, .main .selectors-desc p {
     font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 footer {
