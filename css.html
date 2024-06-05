@@ -35,10 +35,14 @@
         </header>
 
         <main>
-            <aside></aside>
             <div class="main">
                 <h3 class="main-element">What is it?</h3>
                 <p class="main-element"><span class="spanCss">CSS</span> is a kind of language that allows to define and create the visual presentation of a document already structurated and writed in HTML. Defining colors, sizes, fonts, positions and more features that improve the user experience.
+                </p>
+
+                <h3 class="main-element">Origin</h3>
+                <p class="main-element">
+                    CSS was created by the Norwegian HÃ¥kon Wium Lie to allow web designers to change the layout, colors, and fonts of their websites. Originally, websites were meant to be used by researchers only, so the decoration did not matter. However, when websites became widespread, the need to make them look nice grew.
                 </p>
                 
                 <hr>
@@ -59,45 +63,67 @@
                     <p class="main-element">The style applies to the elements with the ID specified.</p>
                 </div>
 
-                <p class="main-element">In the very beginning, Tim Berners-Lee, a physicist, created this "hipertext" system with the idea of sharing simple text with other scientists. So, the time passed and now we're at the version number 5 of HTML, where we can do other complex things like controlling tables, defining IDs for every element in the page and being able to linking it with another programming languages, getting the most out of it.
+                <hr class="main-element">
+
+                <h3 class="main-element" style="color:#00d5ff">Specificity</h3>
+                <p class="main-element">It's the way that the browsers have to decide which values of a CSS property are more relevant to an element, and therefore will be applied. It's based in the coincidence rules that are conformed by diferent kinds of CSS selectors.
                 </p>
+                <div class="img-container">
+                    <img src="" alt="" class="main-element">
+                </div>
+                <hr class="main-element">
+
+                <h3 class="main-element">Pseudo-class</h3>
+                <p class="main-element">It's a keyword added to the selector and specifies a special state of the selected element.
+                </p>
+                <p>Here we explain the <span class="spanCss">four principal</span> pseuddo-classes:</p> <br>
+                <div class="markups-desc">
+                    <img src="" alt="hover">
+                    <p class="main-element">Text.</p>
+                    <img src="" alt="active">
+                    <p class="main-element">text.</p>
+                    <img src="" alt="before">
+                    <p class="main-element">text.</p>
+                    <img src="" alt="after">
+                    <p class="main-element">text.</p>
+                </div>
 
                 <hr class="main-element">
 
-                <h3 class="main-element" style="color:#00d5ff">Structure</h3>
-                <p class="main-element">When we talk of "structure" we are talking about boxes. These boxes contain elements. Here's an example: 
+                <h3 class="main-element">Animations</h3>
+                <p class="main-element">
+                    CSS animations make it possible to animate transitions from one CSS style configuration to another. Animations consist of two components, a style describing the CSS animation and a set of keyframes that indicate the start and end states of the animation's style, as well as possible intermediate waypoints.
+                <hr class="main-element">
+
+                <h3 class="main-element">Custom Properties or Variables</h3>
+                <p class="main-element">
+                    Custom properties (sometimes referred to as CSS variables or cascading variables) are entities defined by CSS authors that represent specific values to be reused throughout a document. <br>
+                    Complex websites have very large amounts of CSS, and this often results in a lot of repeated CSS values. Custom properties allow a value to be defined in one place, then referenced in multiple other places so that it's easier to work with. <br>
+                    In CSS, you can declare a custom property using two dashes (--) as a prefix for the property name, or by using the "@property" at-rule.
                 </p>
-                <div class="img-container">
-                    <img src="assets/exampleStructure2.jpg" alt="" class="main-element">
-                </div>
-                <p>As we can see, there are <span class="spanCss">four principal</span> markups:</p> <br>
-                <div class="markups-desc">
-                    <img src="assets/doctype.jpg" alt="">
-                    <p class="main-element">Tells the browser which version of HTML we want to use.</p>
-                    <img src="assets/htmlMarkup.jpg" alt="">
-                    <p class="main-element">Is the root element. Here are stored the rest of the elements. Also, we can tell the browser which language we are working on. Example: "en - english".</p>
-                    <img src="assets/head.jpg" alt="">
-                    <p class="main-element">Provides general information about the document, including its title and links.</p>
-                    <img src="assets/body.jpg" alt="">
-                    <p class="main-element">Here we charge the elements that the user will interact with, like text, images, videos, buttons, etc.</p>
-                </div>
             </div>
         </main>
     </section>
 
     <footer>
         <p>Made by</p>
-        <div class="container-img">
-            <img src="assets/Maxi.png" alt="">
-        </div>
-        <div class="container-img">
-            <img src="assets/Esteban.png" alt="">
-        </div>
-        <div class="container-img">
-            <img src="assets/Green.png" alt="">
-        </div>
-        <div class="container-img">
-            <img src="assets/Manu.png" alt="">
+        <div id="pixel-arts">
+            <div class="container-img">
+                <img src="assets/Maxi.png" alt="">
+                <h4>Maximo Agüero</h4>
+            </div>
+            <div class="container-img">
+                <img src="assets/Esteban.png" alt="">
+                <h4>Esteban Vélez</h4>
+            </div>
+            <div class="container-img">
+                <img src="assets/Green.png" alt="">
+                <h4>Santino Green</h4>
+            </div>
+            <div class="container-img">
+                <img src="assets/Manu.png" alt="">
+                <h4>Manuel Medina</h4>
+            </div>
         </div>
     </footer>
     

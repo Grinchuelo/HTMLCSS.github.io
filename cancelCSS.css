@@ -12,7 +12,6 @@
     width: 150px;
     height: 30px;
     display: flex;
-    
 }
 #btnDisabled, #btnActivated{
     display: flex;
@@ -25,7 +24,7 @@
     transition: 0.3s;
 }
 #btnDisabled:hover, #btnActivated:hover{
-    font-size: larger;
+    font-size: x-large;
 }
 #btnDisabled{
     left: 10px;

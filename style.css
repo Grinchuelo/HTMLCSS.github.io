@@ -37,7 +37,6 @@ nav a {
     color: #00d5ff;
 }
 
-
 ul{
     display: flex;
     width: 80vh;
@@ -48,11 +47,12 @@ ul{
 }
 section {
     display: flex;
-    padding: 4rem;
+    padding: 2rem;
   
-    width: 90vw;
+    width: 100vw;
 
     justify-content: center;
+    align-items: center;
     margin: auto;
     flex-wrap: wrap;
 }
@@ -65,7 +65,7 @@ header img {
     width: 15rem;
 }
 
-header .header-containerTitle {
+.header-containerTitle {
     transform: translateY(-3rem);
     margin-left: 2rem;
 }
@@ -83,19 +83,14 @@ header .header-containerTitle h2 {
 }
 
 main {
-    width: 100%;
+    width: 80%;
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
 }
 
-main aside{
-    width: 20%;
-    height: 100%;
-    border: solid;
-}
 .main {
-    width: 80%;
+    width: 100%;
     height: 100%;
     padding: 2rem;
 }
@@ -105,6 +100,7 @@ main aside{
 }
 .main p {
     font-size: 1.8rem;
+    text-align: justify;
 }
 .main .img-container {
     display: flex;
@@ -121,10 +117,11 @@ main aside{
     font-size: 1.5rem;
 }
 
-h4 {
+.subtitle {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
+    color: #73ff00;
 }
 
 footer {
@@ -132,19 +129,31 @@ footer {
     height: 18rem;
     margin-top: 3rem;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    
 }
 
 footer p {
+    width: 20%;
+    height: max-content;
     font-size: 3rem;
     font-weight: 100;
     color: #c7c7c7;
+    text-align: end;
 }
-
+#pixel-arts{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
 footer .container-img img {
     width: 10rem;
 } 
+footer .container-img h4{
+    width: 100%;
+    text-align: center;
+}
 
 .spanHtml {
     color: #ff6200;
