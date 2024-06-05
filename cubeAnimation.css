@@ -1,0 +1,89 @@
+#animationDesc {
+    margin-bottom: 8rem;
+}
+
+.cube-container {
+    width: 100%;
+    position: relative;
+}
+.cube-container .cube-example {
+    width: 100%;
+    position: absolute;
+    top: -5rem;
+    right: calc(-100% + 25rem);
+}
+.cube-container .cube-example img {
+    width: 28rem;
+}
+
+.cube 
+{
+    position: relative;
+    left: 0;
+    width: 300px;
+    height: 500px;
+    transform-style: preserve-3d;
+    animation: animate 5s linear infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        transform: rotateX(-25deg) rotateY(0deg);
+    }
+    50%
+    {
+        transform: rotateX(-15deg) rotateY(180deg);
+    }
+    100%
+    {
+        transform: rotateX(-25deg) rotateY(360deg);
+    }
+}
+
+.cube div 
+{
+    width: 100%;
+    height: 300px;
+    transform-style: preserve-3d;
+}
+
+.cube div span 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(#151515, #00ec00); */
+    background-image: url('assets/sideGrassBlock.png');
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+    backface-visibility: hidden;
+}
+
+.top 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: url('assets/topGrassBlock.png');
+    background-size: cover;
+    background-position: center;
+    transform: rotateX(90deg) translateZ(150px);
+    backface-visibility: hidden;
+}
+
+.cube div span::before,
+.top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}

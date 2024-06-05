@@ -6,6 +6,7 @@
     <title>What is HTML and CSS</title>
     <link rel="stylesheet" href="style.css" id="estilos">
     <link rel="stylesheet" href="cancelCSS.css">
+    <link rel="stylesheet" href="cubeAnimation.css">
 </head>
 <body>
     <nav class="navCss">
@@ -76,24 +77,39 @@
                 <h3 class="main-element">Pseudo-class</h3>
                 <p class="main-element">It's a keyword added to the selector and specifies a special state of the selected element.
                 </p>
-                <p>Here we explain the <span class="spanCss">four principal</span> pseuddo-classes:</p> <br>
+                <p>Here we explain the <span class="spanCss">four principal</span> pseudo-classes:</p> <br>
                 <div class="markups-desc">
-                    <img src="" alt="hover">
+                    <img src="assets/hover.png" alt="hover">
                     <p class="main-element">Text.</p>
                     <img src="" alt="active">
                     <p class="main-element">text.</p>
-                    <img src="" alt="before">
+                    <img src="" alt="focus">
                     <p class="main-element">text.</p>
-                    <img src="" alt="after">
+                    <img src="" alt="nthChild()">
                     <p class="main-element">text.</p>
                 </div>
 
                 <hr class="main-element">
 
                 <h3 class="main-element">Animations</h3>
-                <p class="main-element">
-                    CSS animations make it possible to animate transitions from one CSS style configuration to another. Animations consist of two components, a style describing the CSS animation and a set of keyframes that indicate the start and end states of the animation's style, as well as possible intermediate waypoints.
-                <hr class="main-element">
+                <p class="main-element" id="animationDesc">
+                    <span class="spanCss">CSS animations</span> make it possible to animate transitions from one CSS style configuration to another. Animations consist of two components: the propierty <span class="spanCss">'animation'</span> describing the CSS animation and a set of keyframes that indicate the start and end of the states of the element, as well as possible intermediate waypoints. 
+                </p>
+                <div class="cube-container">
+                    <div class="cube">
+                        <div class="top"></div>
+                        <div>
+                            <span style="--i:0;"></span>
+                            <span style="--i:1;"></span>
+                            <span style="--i:2;"></span>    
+                            <span style="--i:3;"></span>  
+                        </div>
+                    </div>
+                    <div class="cube-example">
+                        <img src="assets/cubeExample.png" alt="">
+                    </div>
+                </div>  
+                    <hr class="main-element">
 
                 <h3 class="main-element">Custom Properties or Variables</h3>
                 <p class="main-element">

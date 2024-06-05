@@ -8,6 +8,7 @@
 body {
     color: #f1f1f1;
     background: #020420;
+    overflow-x: hidden;
 }
 
 nav {
@@ -153,6 +154,8 @@ footer .container-img img {
 footer .container-img h4{
     width: 100%;
     text-align: center;
+    font-weight: 400;
+    letter-spacing: .1rem;
 }
 
 .spanHtml {
