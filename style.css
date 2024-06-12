@@ -166,6 +166,29 @@ footer .container-img h4{
     color: #00d5ff;
 }
 
+
+/* Boton traduccion */
+.langButton{
+    max-height: 60%;
+
+    /* background-image: url(/assets/argentina.png); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.langButton img {
+    width: 4rem;
+    height: max-content;
+
+    filter: drop-shadow(0 0 4px rgb(255, 253, 253));
+}
+.langButton:hover{
+    filter: brightness(1.08);
+    transform: scale(1.2);
+}
+
+
 @media (max-width: 1200px) {
     section {
         padding: 4rem 1rem 4rem 1rem;

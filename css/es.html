@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is HTML and CSS</title>
+    <link rel="stylesheet" href="../style.css" id="estilos">
+    <link rel="stylesheet" href="../cancelCSS.css">
+    <link rel="stylesheet" href="../cubeAnimation.css">
+</head>
+<body>
+    <nav class="navCss">
+        <ul>
+            <li><a href="es.html" class="link" id="css">CSS</a></li>
+            <li><a href="../index/es.html" class="link" id="html">HTML</a></li>
+        </ul>
+
+        <a href="../css.html" class="langButton">
+            <img src="../assets/estados-unidos.png" alt="">
+        </a>
+
+        <div class="contBtn">
+            <div class="labelBtn">CSS?</div>
+            <div id="btn">
+                <a id="btnDisabled" class="" onclick="disableCSS()"><i class="fa-solid fa-xmark"></i></a>
+                <a id="btnActivated" class="green" onclick="activeCSS()"><i class="fa-solid fa-check"></i></a>
+            </div>
+        </div>
+    </nav>
+   
+    <section>
+        <header>
+            <div class="header-containerImg">
+                <img src="../assets/IconCSS.png" alt="iconoHTML5">
+            </div>
+            <div class="header-containerTitle">
+                <h1>HEC</h1>
+                <h2>Hojas de Estilo en Cascada</h2>
+            </div> 
+        </header>
+
+        <main>
+            <div class="main">
+                <h3 class="main-element">¿Qué es?</h3>
+                <p class="main-element"><span class="spanCss">HEC</span> (O, y de ahora en adelante, <span class="spanCss">CSS</span>, por sus siglas en inglés) es un lenguaje que permite definir y crear la presentación visual de un documento ya estructurado y escrito en HTML. Definiendo colores, tamaños, fuentes, posiciones y más características que mejoran la experiencia del usuario.
+                </p>
+
+                <h3 class="main-element">Origen</h3>
+                <p class="main-element">
+                    CSS fue creado por el Noruego HÃ¥kon Wium Lie, para permitir a desarrolladores web cambiar la distribución, colores y fuentes de sus sitios web. Originalmente, los sitios web estaban dirigidos sólamente a que lo usaran investigadores, por ende, la decoración no importaba. Sin embargo, cuando los sitios web se volvieron de uso amplio y masivo, la necesidad de que lucieran bien aumentó.
+                </p>
+                
+                <hr>
+
+                <h3 class="main-element">Selectores</h3>
+                <div class="selectors-desc">
+                    <h4 class="subtitle">global</h4>
+                    <img src="../assets/selectorGlobal.png" alt="">
+                    <p class="main-element">El estilo se aplica a cada elemento en el documento HTML.</p>
+                    <h4 class="subtitle">markup / por etiqueta de elemento</h4>
+                    <img src="../assets/selectorPorEtiqueta.png" alt="">
+                    <p class="main-element">El estilo se aplica a cada elemento en el documento HTML con la misma etiqueta.</p>
+                    <h4 class="subtitle">class / por clase</h4>
+                    <img src="../assets/selectorPorClase.png" alt="">
+                    <p class="main-element">El estilo aplica a los elementos con la clase especificada.</p>
+                    <h4 class="subtitle">id / por identificador</h4>
+                    <img src="../assets/selectorPorID.png" alt="">
+                    <p class="main-element">El estilo aplica a los elementos con el ID (Identificador) especificado.</p>
+                </div>
+
+                <hr class="main-element">
+
+                <h3 class="main-element" style="color:#00d5ff">Especificidad</h3>
+                <p class="main-element"> Es la manera en que los navegadores deciden que valores de una propiedad CSS son mas relevantes para un elemento, y por ende serán aplicados con prioridad. Está basado en las reglas de coincidencia que están compuestas por diferentes tipos de selectores CSS.
+                </p>
+                <div class="img-container">
+                    <img src="" alt="" class="main-element">
+                </div>
+                <hr class="main-element">
+
+                <h3 class="main-element">Seudo-clase</h3>
+                <p class="main-element">Es una palabra clave añadida al selector, la cual especifica une estado concreto del elemento seleccionado.
+                </p>
+                <p>A continuación explicamos las <span class="spanCss">cuatro seudo-clases principales</span>:</p> <br>
+                <div class="markups-desc">
+                    <img src="../assets/hover.png" alt="hover">
+                    <p class="main-element">El estilo se aplica cuando el mouse pasa por encima, "flota", sobre un elemento.</p>
+                    <img src="../assets/active.png" alt="active">
+                    <p class="main-element">EL estilo aplica cuando se hace click en el elemento.</p>
+                    <img src="../assets/focus.png" alt="focus">
+                    <p class="main-element">Funciona cuando el usuario clickea un ingreso de datos (input).</p>
+                    <img src="../assets/nthChild.png" alt="nthChild()">
+                    <p class="main-element">El estilo se aplica a los elementos hijos, segun un patrón especificado en el argumento. (nth Child ~ Hijo numerado)</p>
+                </div>
+
+                <hr class="main-element">
+
+                <h3 class="main-element">Animaciones</h3>
+                <p class="main-element" id="animationDesc">
+                    Las <span class="spanCss">animaciones CSS</span> hacen posible dar movimiento a transiciones de una estilo de CSS a otro. Las animaciones consisten en 2 componentes: La propiedad <span class="spanCss">'animation'</span> describiendo que animación CSS utilizar y una serie de fotogramas clave (keyframes) que indican el comienzo y el final de los estados del elemento, asi como posibles puntos de recorrido intermedios (intermediate waypoints). 
+                </p>
+                <div class="cube-container">
+                    <div class="cube">
+                        <div class="top"></div>
+                        <div>
+                            <span style="--i:0;"></span>
+                            <span style="--i:1;"></span>
+                            <span style="--i:2;"></span>    
+                            <span style="--i:3;"></span>  
+                        </div>
+                    </div>
+                    <div class="cube-example">
+                        <img src="../assets/cubeExample.png" alt="">
+                    </div>
+                </div>  
+                    <hr class="main-element">
+
+                <h3 class="main-element">Propiedades personalizables o Variables</h3>
+                <p class="main-element">
+                    Las propiedades personalizables (A veces referidas como variables CSS o variables en cascada) son entidades definidas por autores de CSS que representan valores específicos para ser reusados a lo largo del documento.<br>
+                    Los sitios web complejos tienen grandes cantidades de líneas de CSS, y esto a menudo resulta en mucha cantidad de valores de CSS repetidos. Las propiedades personalizables permiten que un valor o configuracion se defina en un solo lugar, y que a partir de allí sea referenciado en múltiples lugares del documento, para facilitar el trabajo.<br>
+                    En CSS, puedes declarar una propiedad personalizada usando dos guiones (--) como un prefijo para el nombre de la propiedad, o usando la regla "@property".
+                </p>
+            </div>
+        </main>
+    </section>
+
+    <footer>
+        <p>Hecho por</p>
+        <div id="pixel-arts">
+            <div class="container-img">
+                <img src="../assets/Maxi.png" alt="">
+                <h4>Maximo Agüero</h4>
+            </div>
+            <div class="container-img">
+                <img src="../assets/Esteban.png" alt="">
+                <h4>Esteban Vélez</h4>
+            </div>
+            <div class="container-img">
+                <img src="../assets/Green.png" alt="">
+                <h4>Santino Green</h4>
+            </div>
+            <div class="container-img">
+                <img src="../assets/Manu.png" alt="">
+                <h4>Manuel Medina</h4>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/eab0160ed4.js" crossorigin="anonymous"></script>
+    <script src="../code.js"></script>
+</body>
+</html>

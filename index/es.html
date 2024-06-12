@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is HTML and CSS</title>
+    <link rel="stylesheet" href="../style.css" id="estilos">
+    <link rel="stylesheet" href="../cancelCSS.css">
+</head>
+<body>
+    <nav class="navHtml">
+        <ul>
+            <li><a href="../css/es.html" class="link" id="css">CSS</a></li>
+            <li><a href="es.html" class="link" id="html">HTML</a></li>
+        </ul>
+
+        <a href="../index.html" class="langButton">
+            <img src="../assets/estados-unidos.png" alt="">
+        </a>
+
+        <div class="contBtn">
+            <div class="labelBtn">CSS?</div>
+            <div id="btn">
+                <a id="btnDisabled" class="" onclick="disableCSS()"><i class="fa-solid fa-xmark"></i></a>
+                <a id="btnActivated" class="green" onclick="activeCSS()"><i class="fa-solid fa-check"></i></a>
+            </div>
+        </div>
+    </nav>
+   
+    <section>
+        <header>
+            <div class="header-containerImg">
+                <img src="../assets/IconHTML.png" alt="iconoHTML5">
+            </div>
+            <div class="header-containerTitle">
+                <h1>LMHT</h1>
+                <h2>Lenguaje de Marcado de Hipertexto</h2>
+            </div> 
+        </header>
+
+        <main>
+            <div class="main">
+                <h3 class="main-element">¿Qué es?</h3>
+                <p class="main-element"><span class="spanHtml">LMHT</span> (O, y de ahora en adelante, <span class="spanHtml">HTML</span> por sus siglas en inglés) es un lenguaje de tipeo empleado para el desarrollo web. Nos ayuda a crear la estructura del sitio web, añadiendo el texto y los archivos multimedia dentro de cajas, estratégicamente posicionadas, para añadirles estilo posteriormente.
+                </p>
+                <div class="img-container">
+                    <img src="../assets/structure.jpg" alt="" class="main-element">
+                </div>
+
+                <h3 class="main-element">Origen</h3>
+                <p class="main-element"> En un primer instante, Tim Berners-Lee, un físico, creó este sistema de "hipertexto" con la idea de compartir texto simple con otros científicos. Así, el tiempo pasó y ahora mismo estamos en la version número 5 de HTML, en la cual podemos hacer otras cosas más comlejas, como controlar tablas, definir Ides para cada elemento en la página, y ser capaces de enlazarlo con otros lenguajes de programación, aprovechándolo al maxímo.
+                </p>
+                
+                <hr class="main-element">
+
+                <h3 class="main-element" style="color:#ff6200">Estructura</h3>
+                <p class="main-element">Cuando hablamos de "estructura", nos referimos a <span class="spanHtml">cajas</span>. Estas cajas contienen elementos, aquí hay un ejemplo:
+                </p>
+                <div class="img-container">
+                    <img src="../assets/exampleStructure2.jpg" alt="" class="main-element">
+                </div>
+                <p>Como podemos ver hay <span class="spanHtml">cuatro etiquetas principales</span>:</p> <br>
+                <div class="markups-desc">
+                    <img src="../assets/doctype.jpg" alt="">
+                    <p class="main-element">Le dice al navegador que versión de HTML utilizar.</p>
+                    <img src="../assets/htmlMarkup.jpg" alt="">
+                    <p class="main-element">Es el elemento "raíz", en el mismo se almacenan el resto de elementos. También, podemos decirle al navegador en que idioma estamos trabajando, por ejemplo: "es - español"</p>
+                    <img src="../assets/head.jpg" alt="">
+                    <p class="main-element">Provee información general acerca del documento, incluyendo su título y enlaces externos.</p>
+                    <img src="../assets/body.jpg" alt="">
+                    <p class="main-element">Aquí cargamos los elementos con los que el usuario interactuará, como texto, imágenes, videos, botones, etc.</p>
+                </div>
+            </div>
+            <!-- <aside></aside> --> 
+        </main>
+    </section>
+    
+    <footer>
+        <p>Hecho por</p>
+        <div id="pixel-arts">
+            <div class="container-img">
+                <img src="../assets/Maxi.png" alt="">
+                <h4>Maximo Agüero</h4>
+            </div>
+            <div class="container-img">
+                <img src="../assets/Esteban.png" alt="">
+                <h4>Esteban Vélez</h4>
+            </div>
+            <div class="container-img">
+                <img src="../assets/Green.png" alt="">
+                <h4>Santino Green</h4>
+            </div>
+            <div class="container-img">
+                <img src="../assets/Manu.png" alt="">
+                <h4>Manuel Medina</h4>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/eab0160ed4.js" crossorigin="anonymous"></script>
+    <script src="../code.js"></script>
+</body>
+</html>
